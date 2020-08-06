@@ -2,25 +2,30 @@ package Modelo;
 
 public class Autor {
     private int idautor;
-    private String nombre;
+    private String nombres;
+    private String apellidos;
     private String f_nacimiento;
+    private String país;
+    private String estado;
 
     public Autor() {
     }
-    
 
-    public Autor(int idautor, String nombre, String f_nacimiento) {
+    public Autor(int idautor, String nombres, String apellidos, String f_nacimiento, String país, String estado) {
         this.idautor = idautor;
-        this.nombre = nombre;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
         this.f_nacimiento = f_nacimiento;
+        this.país = país;
+        this.estado = estado;
     }
 
-    public String getF_nacimiento() {
-        return f_nacimiento;
+    public String getEstado() {
+        return estado;
     }
 
-    public void setF_nacimiento(String f_nacimiento) {
-        this.f_nacimiento = f_nacimiento;
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 
     public int getIdautor() {
@@ -31,12 +36,36 @@ public class Autor {
         this.idautor = idautor;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombres() {
+        return nombres;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
     }
-      
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public String getF_nacimiento() {
+        return f_nacimiento;
+    }
+
+    public void setF_nacimiento(String f_nacimiento) {
+        this.f_nacimiento = f_nacimiento;
+    }
+
+    public String getPaís() {
+        return país;
+    }
+
+    public void setPaís(String país) {
+        this.país = país;
+    }
+
 }
